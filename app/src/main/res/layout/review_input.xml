@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <ImageView
+        android:id="@+id/ivReviewInput"
+        android:layout_width="536dp"
+        android:layout_height="341dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/img_tepung" />
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="415dp"
+        android:layout_height="454dp"
+        android:background="@drawable/bg_rounded"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivReviewInput">
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="412dp"
+            android:layout_height="61dp"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/star5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="4dp"
+                app:layout_constraintEnd_toStartOf="@+id/star4"
+                app:srcCompat="@drawable/iconoir_star"
+                tools:layout_editor_absoluteY="463dp" />
+
+            <ImageView
+                android:id="@+id/star1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toStartOf="@+id/star2"
+                app:layout_constraintHorizontal_bias="0.375"
+                app:layout_constraintStart_toStartOf="parent"
+                app:srcCompat="@drawable/iconoir_star"
+                tools:layout_editor_absoluteY="463dp" />
+
+            <ImageView
+                android:id="@+id/star3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="4dp"
+                app:layout_constraintEnd_toStartOf="@+id/star5"
+                app:srcCompat="@drawable/iconoir_star"
+                tools:layout_editor_absoluteY="463dp" />
+
+            <ImageView
+                android:id="@+id/star2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="4dp"
+                app:layout_constraintEnd_toStartOf="@+id/star3"
+                app:srcCompat="@drawable/iconoir_star"
+                tools:layout_editor_absoluteY="463dp" />
+
+            <ImageView
+                android:id="@+id/star4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="48dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:srcCompat="@drawable/iconoir_star"
+                tools:layout_editor_absoluteY="463dp" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnPostReview"
+            android:layout_width="358dp"
+            android:layout_height="48dp"
+            android:layout_marginBottom="88dp"
+            android:background="@drawable/bg_button_blue"
+            android:text="Post Review"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.49"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="350dp"
+            android:layout_height="220dp"
+            android:layout_marginBottom="60dp"
+            android:hint="@string/comment"
+            android:background="@drawable/bg_comment"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="15dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="textMultiLine"
+                android:lines="6"
+                android:gravity="top"
+                android:textSize="13dp"
+                android:overScrollMode="always"
+                android:scrollbars="vertical"
+                android:scrollbarStyle="insideInset"
+                android:scrollHorizontally="false" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/tvNamaBarang"
+        android:layout_width="270dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="228dp"
+        android:text="Tepung Segitiga Biru"
+        android:textSize="23sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:shadowColor="@color/black"
+        android:shadowDx="5"
+        android:shadowDy="4"
+        android:shadowRadius="20"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvDeskripsiBarang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:text="125gr"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:textStyle="normal"
+        android:shadowColor="@color/black"
+        android:shadowDx="5"
+        android:shadowDy="4"
+        android:shadowRadius="20"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvNamaBarang" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
