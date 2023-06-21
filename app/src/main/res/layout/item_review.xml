@@ -5,7 +5,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:background="@drawable/bg_shadow"
     android:elevation="5dp"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/clReview">
 
     <ImageView
         android:id="@+id/ivUserReview"
@@ -20,21 +21,10 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/tvQuantity"
-        android:layout_width="wrap_content"
-        android:layout_height="15dp"
-        android:layout_marginStart="28dp"
-        android:layout_marginTop="1dp"
-        android:text="3 days ago"
-        android:textSize="10sp"
-        app:layout_constraintStart_toEndOf="@+id/ivUserReview"
-        app:layout_constraintTop_toBottomOf="@+id/tvPesanan_NamaBrg" />
-
-    <TextView
         android:id="@+id/tvPesanan_NamaBrg"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="28dp"
+        android:layout_marginStart="12dp"
         android:layout_marginTop="8dp"
         android:text="Emily"
         android:textColor="@color/black"
@@ -44,15 +34,29 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView18"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
+        android:id="@+id/item_tvReviewInput"
+        android:layout_width="280dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="64dp"
         android:text="@string/loremipsum"
         android:textColor="@color/black"
         android:textSize="9sp"
-        app:layout_constraintStart_toStartOf="@+id/tvQuantity"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvPesanan_NamaBrg" />
+
+    <TextView
+        android:id="@+id/item_tvRateCount"
+        android:layout_width="60dp"
+        android:layout_height="15dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:text="TextView"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

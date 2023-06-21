@@ -129,7 +129,7 @@
                         android:layout_height="32dp"
                         android:layout_gravity="center"
                         android:background="#00000000"
-                        app:srcCompat="@drawable/icon_star" />
+                        app:srcCompat="@drawable/icon_star_rating" />
 
                     <TextView
                         android:id="@+id/textView2"

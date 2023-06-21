@@ -18,119 +18,103 @@
         app:srcCompat="@drawable/img_tepung" />
 
 
-
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="415dp"
-        android:layout_height="454dp"
+        android:layout_width="414dp"
+        android:layout_height="421dp"
         android:background="@drawable/bg_rounded"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ivReviewInput">
+        app:layout_constraintTop_toBottomOf="@+id/ivReviewInput"
+        app:layout_constraintVertical_bias="1.0">
 
 
-        <LinearLayout
-            android:id="@+id/linearLayout"
-            android:layout_width="412dp"
-            android:layout_height="61dp"
-            android:layout_marginTop="16dp"
-            android:gravity="center"
-            android:orientation="horizontal"
+        <RatingBar
+            android:id="@+id/ratingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintHorizontal_bias="0.494"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
-
-            <ImageView
-                android:id="@+id/star5"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="4dp"
-                app:layout_constraintEnd_toStartOf="@+id/star4"
-                app:srcCompat="@drawable/iconoir_star"
-                tools:layout_editor_absoluteY="463dp" />
-
-            <ImageView
-                android:id="@+id/star1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                app:layout_constraintEnd_toStartOf="@+id/star2"
-                app:layout_constraintHorizontal_bias="0.375"
-                app:layout_constraintStart_toStartOf="parent"
-                app:srcCompat="@drawable/iconoir_star"
-                tools:layout_editor_absoluteY="463dp" />
-
-            <ImageView
-                android:id="@+id/star3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="4dp"
-                app:layout_constraintEnd_toStartOf="@+id/star5"
-                app:srcCompat="@drawable/iconoir_star"
-                tools:layout_editor_absoluteY="463dp" />
-
-            <ImageView
-                android:id="@+id/star2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="4dp"
-                app:layout_constraintEnd_toStartOf="@+id/star3"
-                app:srcCompat="@drawable/iconoir_star"
-                tools:layout_editor_absoluteY="463dp" />
-
-            <ImageView
-                android:id="@+id/star4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="48dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:srcCompat="@drawable/iconoir_star"
-                tools:layout_editor_absoluteY="463dp" />
-
-        </LinearLayout>
+            app:layout_constraintTop_toTopOf="parent" />
 
         <Button
             android:id="@+id/btnPostReview"
             android:layout_width="358dp"
             android:layout_height="48dp"
-            android:layout_marginBottom="88dp"
+            android:layout_marginBottom="16dp"
             android:background="@drawable/bg_button_blue"
             android:text="Post Review"
-            android:textAllCaps="true"
+            android:textAllCaps="false"
             android:textColor="@color/white"
             android:textSize="16sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.49"
             app:layout_constraintStart_toStartOf="parent" />
 
         <com.google.android.material.textfield.TextInputLayout
-            android:layout_width="350dp"
-            android:layout_height="220dp"
+            android:id="@+id/reviewInput"
+            android:layout_width="342dp"
+            android:layout_height="160dp"
             android:layout_marginBottom="60dp"
-            android:hint="@string/comment"
             android:background="@drawable/bg_comment"
+
             android:paddingLeft="20dp"
             android:paddingRight="20dp"
             android:paddingBottom="15dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
-            <com.google.android.material.textfield.TextInputEditText
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:inputType="textMultiLine"
-                android:lines="6"
-                android:gravity="top"
-                android:textSize="13dp"
-                android:overScrollMode="always"
-                android:scrollbars="vertical"
-                android:scrollbarStyle="insideInset"
-                android:scrollHorizontally="false" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.711">
+
+            <EditText
+                android:id="@+id/etReviewInput"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/comment"
+                android:textSize="12dp" />
+
+            <!--            <com.google.android.material.textfield.TextInputEditText-->
+            <!--                android:id="@+id/etReviewInput"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="match_parent"-->
+            <!--                android:gravity="top"-->
+            <!--                android:inputType="textMultiLine"-->
+            <!--                android:lines="6"-->
+            <!--                android:overScrollMode="always"-->
+            <!--                android:scrollbarStyle="insideInset"-->
+            <!--                android:scrollbars="vertical"-->
+            <!--                android:scrollHorizontally="false"-->
+            <!--                android:textSize="13dp" />-->
 
         </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/tvRateCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="Rate Count"
+            android:text="TextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.501"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ratingBar" />
+
+        <TextView
+            android:id="@+id/tvShowRating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="228dp"
+            android:text="TextView"
+            android:hint="Show Rating"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ratingBar" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -139,15 +123,15 @@
         android:layout_width="270dp"
         android:layout_height="36dp"
         android:layout_marginStart="40dp"
-        android:layout_marginTop="228dp"
-        android:text="Tepung Segitiga Biru"
-        android:textSize="23sp"
-        android:textColor="@color/white"
-        android:textStyle="bold"
+        android:layout_marginTop="244dp"
         android:shadowColor="@color/black"
         android:shadowDx="5"
         android:shadowDy="4"
         android:shadowRadius="20"
+        android:text="Tepung Segitiga Biru"
+        android:textColor="@color/white"
+        android:textSize="23sp"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 

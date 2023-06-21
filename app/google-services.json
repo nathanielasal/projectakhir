@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "52869915427",
+    "firebase_url": "https://logistics-123-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "logistics-123",
+    "storage_bucket": "logistics-123.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:52869915427:android:c67dce6bafefb0a6492296",
+        "android_client_info": {
+          "package_name": "sns.example.projectakhir"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "52869915427-cgu12ut6qk3dpg6i5u80b47b3nod6msb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBsUj2oDc4Y5da7afED4UxvKenu0LKRPDo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "52869915427-cgu12ut6qk3dpg6i5u80b47b3nod6msb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -9,9 +9,4 @@
     <corners
         android:radius="20dp"/>
 
-    <item
-    android:shadowColor="#000000"
-    android:shadowDx="10dp"
-    android:shadowDy="10dp"
-    android:shadowRadius="10" />
     </shape>
