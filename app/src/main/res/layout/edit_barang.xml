@@ -176,7 +176,7 @@
         app:layout_constraintTop_toBottomOf="@+id/cardView3" />
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/cardView4"
+        android:id="@+id/cvNama"
         android:layout_width="350dp"
         android:layout_height="41dp"
         android:layout_marginTop="4dp"
@@ -200,8 +200,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:text="UPLOAD FOTO"
-        app:layout_constraintStart_toStartOf="@+id/cardView4"
-        app:layout_constraintTop_toBottomOf="@+id/cardView4" />
+        app:layout_constraintStart_toStartOf="@+id/cvNama"
+        app:layout_constraintTop_toBottomOf="@+id/cvNama" />
 
     <TextView
         android:id="@+id/textView16"
@@ -209,7 +209,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
         android:text="Harga"
-        app:layout_constraintStart_toStartOf="@+id/cardView4"
+        app:layout_constraintStart_toStartOf="@+id/cvNama"
         app:layout_constraintTop_toBottomOf="@+id/imageView5" />
 
     <FrameLayout
@@ -268,7 +268,7 @@
 
 
         <TextView
-            android:id="@+id/textView17"
+            android:id="@+id/cvHarga"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="11dp"

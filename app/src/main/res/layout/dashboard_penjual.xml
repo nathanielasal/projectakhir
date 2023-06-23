@@ -46,7 +46,7 @@
         app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerView"
+        android:id="@+id/rvDashboardPenjual"
         android:layout_width="412dp"
         android:layout_height="401dp"
         android:layout_marginTop="120dp"
@@ -58,16 +58,15 @@
         tools:listitem="@layout/item_dashboard" />
 
     <Button
-        android:id="@+id/btnAdd"
+        android:id="@+id/btnAddBarang"
         android:layout_width="90dp"
         android:layout_height="30dp"
-        android:layout_marginBottom="20dp"
+        android:layout_marginBottom="21dp"
         android:background="@drawable/bg_button_green"
         android:text="Add"
-        app:layout_constraintBottom_toTopOf="@+id/recyclerView"
+        app:layout_constraintBottom_toTopOf="@+id/rvDashboardPenjual"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.887"
+        app:layout_constraintHorizontal_bias="0.903"
         app:layout_constraintStart_toStartOf="parent" />
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

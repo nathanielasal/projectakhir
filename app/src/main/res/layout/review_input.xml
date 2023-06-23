@@ -5,8 +5,6 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-
-
     <ImageView
         android:id="@+id/ivReviewInput"
         android:layout_width="536dp"
@@ -29,7 +27,6 @@
         app:layout_constraintTop_toBottomOf="@+id/ivReviewInput"
         app:layout_constraintVertical_bias="1.0">
 
-
         <RatingBar
             android:id="@+id/ratingBar"
             android:layout_width="wrap_content"
@@ -44,7 +41,7 @@
             android:id="@+id/btnPostReview"
             android:layout_width="358dp"
             android:layout_height="48dp"
-            android:layout_marginBottom="16dp"
+            android:layout_marginBottom="36dp"
             android:background="@drawable/bg_button_blue"
             android:text="Post Review"
             android:textAllCaps="false"
@@ -73,9 +70,10 @@
 
             <EditText
                 android:id="@+id/etReviewInput"
-                android:layout_width="wrap_content"
+                android:layout_width="296dp"
                 android:layout_height="wrap_content"
-                android:hint="@string/comment"
+                android:layout_marginTop="22dp"
+                android:hint="Write a review about this product... "
                 android:textSize="12dp" />
 
             <!--            <com.google.android.material.textfield.TextInputEditText-->
@@ -97,22 +95,13 @@
             android:id="@+id/tvRateCount"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="11dp"
             android:hint="Rate Count"
-            android:text="TextView"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.501"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/ratingBar" />
-
-        <TextView
-            android:id="@+id/tvShowRating"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="228dp"
-            android:text="TextView"
-            android:hint="Show Rating"
-            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/ratingBar" />
 

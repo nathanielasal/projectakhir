@@ -12,5 +12,5 @@
     <string name="hargatot"><b>Rp592.000</b></string>
     <string name="tambah"><b>Tambah Barang</b></string>
     <string name="edit"><b>Edit Barang</b></string>
-    <string name="loremipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean turpis felis, pellentesque nec consequat quis, sodales varius elit. Aliquam a ultricies arcu. Duis volutpat est condimentum, vehicula elit elementum, dictum lorem. Phasellus a egestas lorem. Sed non pretium nibh. Aliquam a sapien odio. Duis at diam blandit, eleifend risus consectetur, laoreet eros. Quisque lacus odio, ornare non felis et, dictum vestibulum augue. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</string>
+    <string name="loremipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean turpis felis, pellentesque nec consequat quis, sodales varius elit. </string>
 </resources>

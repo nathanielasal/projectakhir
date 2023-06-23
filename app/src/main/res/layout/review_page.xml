@@ -3,21 +3,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
-
-
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ActivityReviewPage">
 
     <ImageView
         android:id="@+id/ivReviewPage"
         android:layout_width="536dp"
-        android:layout_height="341dp"
+        android:layout_height="311dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.505"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/img_tepung" />
-
-
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="415dp"
@@ -27,17 +24,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ivReviewPage">
-
-
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/rvReview"
-            android:layout_width="377dp"
-            android:layout_height="260dp"
-            android:layout_marginTop="96dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            tools:listitem="@layout/item_review" />
 
         <Button
             android:id="@+id/review_AddReview"
@@ -51,6 +37,15 @@
             android:background="@drawable/bg_button_blue"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="413dp"
+            android:layout_height="396dp"
+            android:layout_marginTop="80dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:id="@+id/rvReview"
+            tools:listitem="@layout/item_review"/>
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <TextView
